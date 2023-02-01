@@ -1,0 +1,31 @@
+
+
+<div class="container">
+
+    <h1>{{titulo}}</h1>
+    <h2>{{prueba}}</h2>
+    <button class="btn btn-info" [routerLink]="['/serios/form']">Nuevos Datos</button>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">fecha</th>
+            <th scope="col">Duracion</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of serios"> 
+            <th scope="row">1</th>
+            <td>{{i.tiempo}}</td>
+            <td>{{i.duracion}}</td>
+         
+          </tr>
+          
+        </tbody>
+      </table>
+
+</div>
+
+
+
